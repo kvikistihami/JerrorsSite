@@ -3,8 +3,212 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        table a:link {
+            color: #666;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        table a:visited {
+            color: #999999;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        table a:active, table a:hover {
+            color: #bd5a35;
+            text-decoration: underline;
+        }
+
+        table {
+            width: 800px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #666;
+            font-size: 12px;
+            text-shadow: 1px 1px 0px #fff;
+            background: #eaebec;
+            margin: 0 300px;
+            border: #ccc 1px solid;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            -moz-box-shadow: 0 1px 2px #d1d1d1;
+            -webkit-box-shadow: 0 1px 2px #d1d1d1;
+            box-shadow: 0 1px 2px #d1d1d1;
+        }
+
+        table th {
+            padding: 21px 25px 22px 25px;
+            border-top: 1px solid #fafafa;
+            border-bottom: 1px solid #e0e0e0;
+            background: #ededed;
+            background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+            background: -moz-linear-gradient(top, #ededed, #ebebeb);
+        }
+
+        table th:first-child {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        table tr:first-child th:first-child {
+            -moz-border-radius-topleft: 3px;
+            -webkit-border-top-left-radius: 3px;
+            border-top-left-radius: 3px;
+        }
+
+        table tr:first-child th:last-child {
+            -moz-border-radius-topright: 3px;
+            -webkit-border-top-right-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        table tr {
+            text-align: center;
+            padding-left: 20px;
+        }
+
+        table tr td:first-child {
+            text-align: left;
+            padding-left: 20px;
+            border-left: 0;
+        }
+
+        table tr td {
+            padding: 18px;
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            border-left: 1px solid #e0e0e0;
+            background: #fafafa;
+            background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+            background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+        }
+
+        table tr.even td {
+            background: #f6f6f6;
+            background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+            background: -moz-linear-gradient(top, #f8f8f8, #f6f6f6);
+        }
+
+        table tr:last-child td {
+            border-bottom: 0;
+        }
+
+        table tr:last-child td:first-child {
+            -moz-border-radius-bottomleft: 3px;
+            -webkit-border-bottom-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        table tr:last-child td:last-child {
+            -moz-border-radius-bottomright: 3px;
+            -webkit-border-bottom-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+
+        table tr:hover td {
+            background: #f2f2f2;
+            background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+            background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
+        }
+
+        #Email {
+            position: relative;
+            width: 430px;
+        }
+        #resulttable{
+            width: 430px;
+        }
+    </style>
 </head>
 <body>
-<h1>dogado</h1>
+<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+    <tr>
+        <th>Count</th>
+        <th>Emails</th>
+        <th>Action</th>
+        <th>Error code</th>
+        <th>Error message</th>
+        <th>Date</th>
+        <th>Response</th>
+    </tr>
+    <!-- Table Header -->
+    <tr>
+        <td>1</td>
+        <td>conquistadores3@iammagis.com</td>
+        <td>getcurrentactions</td>
+        <td>99</td>
+        <td>Timeout waiting for value</td>
+        <td>05.06.2014 20:02:24</td>
+        <td>
+            {"appid":"1dd8d191d38fff45e62564fcf67fdcd6","session":"eddx1dab614f3a62c0578d63182dd75a7acc","charset":"UTF-8","hx_lang":"en","ruk":"ddf35a5b-6b1c-448d-9d26-tab534098","debug
+            ":{"startTime":1401998542094,"duration":2595,"headers":{"keep-alive":"timeout=10,
+            max=196","connection":"Keep-Alive","access-control-allow-origin":"*","content-type":"text/plain;
+            charset=utf-8","content-language":"es","transfer-encoding":"chunked","server":"nginx","date":"Thu, 05 Jun
+            2014 20:02:24 GMT"},"userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)
+            Ubuntu Chromium/32.0.1700.107 Chrome/32.0.1700.107
+            Safari/537.36","method":"GET","retriesCount":0,"requestId":13,"httpStatus":200,"statusText":"OK","responseText":"{\"result\":99,\"source\":\"JEL\",\"error\":\"Timeout
+            waiting for value\"}","aborted":false,"timedout":false}}
+        </td>
+    </tr>
+    <!-- Table Row -->
+    <td>1</td>
+    <td>enisonoliveira@outlook.com</td>
+    <td>cloneenv</td>
+    <td>19</td>
+    <td>Read timed out</td>
+    <td>04.06.2014 0:52:04</td>
+    <td>
+        {"appid":"8bbcdbe336bf46994d990e856315af13","session":"d52x9c6d97b13822e6d8250ad0a645a251dc","domain":"env-7163543-clone106532","actionkey":"
+        cloneenv;8bbcdbe336bf46994d990e856315af13;env-7163543-clone106532","charset":"UTF-8","hx_lang":"pt","ruk":"041793d7-7e12-47ee-8c1f-tab663807","debug":{"startTime":1401839424572,"duration":361492,"headers":{"keep-alive":"timeout=10,
+        max=200","connection":"Keep-Alive","access-control-allow-origin":"*","content-type":"text/plain;
+        charset=utf-8","content-language":"pt-BR","transfer-encoding":"chunked","server":"nginx","date":"Wed, 04 Jun
+        2014 00:52:04 GMT"},"userAgent":"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/34.0.1847.131
+        Safari/537.36","method":"GET","retriesCount":0,"requestId":19,"httpStatus":200,"statusText":"OK","responseText":"{\"result\":19,\"source\":\"JEL\",\"error\":\"Read
+        timed out\"}","aborted":false,"timedout":false}}
+    </td>
+
+</table>
+<br>
+<table cellspacing="0" id="Email">
+
+    <tr>
+        <th>N</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>conquistadores3@iammagis.com</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>enisonoliveira@outlook.com</td>
+    </tr>
+</table>
+<br>
+<table cellspacing="0" id = "resulttable">
+    <th>
+        Active users
+    </th>
+    <th>
+        Affected users
+    </th>
+    <th>
+        Percent
+    </th>
+    <tr>
+        <td>
+            33
+        </td>
+        <td>
+            2
+        </td>
+        <td>
+            33%
+        </td>
+    </tr>
+</table>
 </body>
 </html>
