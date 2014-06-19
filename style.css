@@ -130,12 +130,12 @@ margin: 0 0 0 1px;
     border-width: 2px 0;
     border-style: solid none;
     border-radius: 6px;
-    background: linear-gradient(#3a61f3, #47c0e3) #ede6f5;
+    background: linear-gradient(#3a61f3, #47c0e3) #fff4f6;
     transition: 0.2s;
     width: 200px;
 }
 .left-sidebar .buttons:hover { background: linear-gradient(#0000f5, #0086f5) #ede6f5; }
-.left-sidebar .buttons:active { background: linear-gradient(#f2eef5, #848484) #f5e8f3; }
+.left-sidebar .buttons:active { background: linear-gradient(#605d63, #979797) #f5e8f3; }
 
 
 /* Footer
