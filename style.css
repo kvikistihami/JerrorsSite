@@ -111,7 +111,7 @@ body {
     padding: 0 0 0 200px;
     height: 800px;
     width: 1920px;
-    overflow: hidden;
+    
     position: absolute;
 
 }
@@ -121,7 +121,7 @@ body {
     height: 98%;
     margin-left: 20px;
     position: absolute;
-    overflow: hidden;
+ 
 
 }
 
