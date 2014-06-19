@@ -28,6 +28,9 @@ footer, header, menu, nav, section {
 
 body {
     line-height: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 ol, ul {
@@ -68,6 +71,7 @@ body {
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%;
 
+
 }
 
 .wrapper {
@@ -75,7 +79,8 @@ body {
     margin: 0 auto;
     min-height: 100%;
     height: auto !important;
-    height: 100%;
+
+
 }
 
 /* Header
@@ -83,56 +88,56 @@ body {
 .header {
     height: 78px;
     background-repeat: no-repeat;
-    margin: 0 0 0 1px;
+    margin: 0 0 0 2px;
     position: relative;
+    padding-bottom: 10px;
+
 
 }
 
 /* Middle
 -----------------------------------------------------------------------------*/
-.middle {
-    width: 100%;
-    padding: 0 0 10px;
-    position: relative;
-}
 
-.middle:after {
-    display: table;
-    clear: both;
-    content: '';
-}
+
 
 .container {
     width: 100%;
     float: left;
     overflow: hidden;
+    height: 100%;
+
 }
 
 .content {
     padding: 0 0 0 205px;
-    height: 875px;
+    height: 800px;
     width: 100%;
     overflow: hidden;
+    position: absolute;
+
 }
 
 .content .report {
-    width: 1712px;
-    height: 100%;
-    border-left: 2px solid black;
-    position: absolute;
+    width: 88%;
+    height: 98%;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
 
 }
 
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
 .left-sidebar {
-    margin: -4px;
+
     float: left;
-    width: 250px;
-    height: 10px;
-    margin-left: -100%;
+    width: 200px;
+margin-left: 3px;
     position: relative;
     padding: 2px;
+    border: 5px #3b9ff2 solid;
+    border-radius: 10px;
+
 }
 
 .left-sidebar .buttons {
@@ -177,14 +182,4 @@ body {
 
 #genbutton:active {
     background: linear-gradient(#68728c, #8b8b8b) #f5e8f3;
-}
-
-/* Footer
------------------------------------------------------------------------------*/
-.footer {
-    margin: -10px auto 0;
-    height: 11px;
-    background: #3b9ff2;
-    position: relative;
-
 }
