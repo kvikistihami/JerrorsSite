@@ -137,6 +137,22 @@ margin: 0 0 0 1px;
 .left-sidebar .buttons:hover { background: linear-gradient(#0075e7, #0090ff) #ede6f5; }
 .left-sidebar .buttons:active { background: linear-gradient(#68728c, #8b8b8b) #f5e8f3; }
 
+#genbutton{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 2em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-radius: 6px;
+    background: linear-gradient(#0551e7, #0090ff) #ede6f5;
+    transition: 0.2s;
+    width: 200px;
+}
+#genbutton:hover { background: linear-gradient(#0000f5, #2c5cff) #fff4f6; }
+#genbutton:active { background: linear-gradient(#fff4f6, #f5001b) #1443f5; }
+
 
 /* Footer
 -----------------------------------------------------------------------------*/
