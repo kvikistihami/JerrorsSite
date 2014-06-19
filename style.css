@@ -1,0 +1,148 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header,  menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+
+}
+.wrapper {
+
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+    height: 78px;
+    background-repeat: no-repeat;
+margin: 0 0 0 1px;
+    position: relative;
+
+
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+	width: 100%;
+	padding: 0 0 10px;
+	position: relative;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.content {
+	padding: 0 0 0 205px;
+    height: 875px;
+    width: 100%;
+    overflow: hidden;
+}
+.content .report {
+    width: 1712px;
+height: 100%;
+    border-left: 2px solid black;
+
+}
+
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+    margin: -4px;
+	float: left;
+	width: 250px;
+    height: 10px;
+	margin-left: -100%;
+	position: relative;
+    padding: 2px;
+}
+.left-sidebar .buttons {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 2em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-radius: 6px;
+    background: linear-gradient(#63e0f3, #47c0e3) #4cc3e3;
+    transition: 0.2s;
+    width: 200px;
+}
+.left-sidebar .buttons:hover { background: linear-gradient(#f1e9f5, #1600f5) #ede6f5; }
+.left-sidebar .buttons:active { background: linear-gradient(#f2eef5, #ec00f5) #f5e8f3; }
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -10px auto 0;
+	height: 11px;
+	background: #63e0f3;
+	position: relative;
+
+
+}
