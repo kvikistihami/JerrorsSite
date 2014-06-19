@@ -64,8 +64,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 body {
     font: 12px/18px Arial, sans-serif;
-    width: 100%;
-    height: 100%;
+
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
@@ -111,17 +110,17 @@ body {
 .content {
     padding: 0 0 0 205px;
     height: 800px;
-    width: 100%;
+    width: 1920px;
     overflow: hidden;
     position: absolute;
 
 }
 
 .content .report {
-    width: 88%;
+    width: 82%;
     height: 98%;
     margin-left: 20px;
-    position: relative;
+    position: absolute;
     overflow: hidden;
 
 }
