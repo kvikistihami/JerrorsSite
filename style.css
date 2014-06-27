@@ -66,7 +66,7 @@ body {
     font: 12px/18px Arial, sans-serif;
 
     -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ Ð¸ Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%;
 
@@ -101,42 +101,53 @@ body {
 
 .container {
     width: 100%;
-    float: left;
-    overflow: hidden;
     height: 100%;
-
+    float: left;
 }
 
 .content {
-    padding: 0 0 0 200px;
+    height:100%;
+    margin-left: 220px;
+    /*padding: 0 0 0 200px;
     height: 800px;
     width: 89%;
 
-    position: absolute;
+    position: absolute;*/
 
 }
 
 .content .report {
-    width: 98%;
+    width: 100%;
     height: 100%;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     position: relative;
-   
 
 }
 
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
+
 .left-sidebar {
 
     float: left;
-    width: 200px;
-margin-left: 3px;
-    position: absolute;
-    padding: 2px;
+    width: 214px;
+    margin-left: -100%;
+
+
+
+}
+
+.left-sidebar .logo {
+    width : 200px;
+    height: 48px;
+
+    padding-bottom: 10px;
+}
+
+.left-sidebar .menu {
     border: 5px #3b9ff2 solid;
     border-radius: 10px;
-
+    padding: 2px;
 }
 
 .left-sidebar .buttons {
@@ -151,6 +162,7 @@ margin-left: 3px;
     background: linear-gradient(#3b9ff2, #47c0e3) #fff4f6;
     transition: 0.2s;
     width: 200px;
+    cursor:pointer;
 }
 
 .left-sidebar .buttons:hover {
@@ -181,4 +193,4 @@ margin-left: 3px;
 
 #genbutton:active {
     background: linear-gradient(#68728c, #8b8b8b) #f5e8f3;
-}
+} 
